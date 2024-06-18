@@ -1,5 +1,5 @@
 import pygame
-from settings import PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_SPEED, SCREEN_WIDTH, SCREEN_HEIGHT, ROAD_WIDTH
+from resources.settings import PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_SPEED, SCREEN_WIDTH, SCREEN_HEIGHT, ROAD_WIDTH
 
 
 class Player(pygame.sprite.Sprite):

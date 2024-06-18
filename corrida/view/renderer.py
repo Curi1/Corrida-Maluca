@@ -1,5 +1,4 @@
-import pygame
-from settings import TEXT_COLOR, BACKGROUND_COLOR
+from resources.settings import TEXT_COLOR, BACKGROUND_COLOR
 
 
 class Renderer:

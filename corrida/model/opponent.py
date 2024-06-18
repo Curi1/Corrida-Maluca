@@ -1,7 +1,7 @@
 import pygame
 import random
-from settings import OPPONENT_WIDTH, OPPONENT_HEIGHT, OPPONENT_SPEED_MIN, OPPONENT_SPEED_MAX, SCREEN_WIDTH, ROAD_WIDTH, \
-    SCREEN_HEIGHT
+from resources.settings import OPPONENT_WIDTH, OPPONENT_HEIGHT, OPPONENT_SPEED_MIN, OPPONENT_SPEED_MAX, SCREEN_WIDTH, \
+    ROAD_WIDTH, SCREEN_HEIGHT
 
 
 class Opponent(pygame.sprite.Sprite):

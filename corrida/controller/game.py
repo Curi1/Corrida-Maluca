@@ -1,12 +1,12 @@
 import pygame
 import random
 import os
-from settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS, FONT_NAME, FONT_SIZE, MUSIC_PATH, CRASH_SOUND_PATH, \
+from resources.settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS, FONT_NAME, FONT_SIZE, MUSIC_PATH, CRASH_SOUND_PATH, \
     CHUCKLE_SOUND_PATH, HIGH_SCORE_FILE, INITIAL_LIVES, PLAYER_HEIGHT
-from model.player import Player
-from model.opponent import Opponent
-from view.road import Road
-from view.renderer import Renderer
+from corrida.model.player import Player
+from corrida.model.opponent import Opponent
+from corrida.view.road import Road
+from corrida.view.renderer import Renderer
 
 class Game:
     def __init__(self):
@@ -18,7 +18,7 @@ class Game:
         self.font = pygame.font.SysFont(FONT_NAME, FONT_SIZE)
         self.renderer = Renderer(self.screen, self.font)
 
-        self.player = Player("assets/player_car.png")
+        self.player = Player("assets/image/player_car.png")
         self.road = Road()
 
         self.all_sprites = pygame.sprite.Group()
@@ -131,7 +131,7 @@ class Game:
         self.score += 1
 
     def add_opponent(self):
-        opponent = Opponent("assets/opponent_car.png")
+        opponent = Opponent("assets/image/opponent_car.png")
         for existing_opponent in self.opponents:
             if opponent.rect.colliderect(existing_opponent.rect):
                 return  # Não adiciona o oponente se ele colidir com um existente

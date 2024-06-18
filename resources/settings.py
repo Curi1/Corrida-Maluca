@@ -22,15 +22,15 @@ BACKGROUND_COLOR = (0, 0, 0)
 # Outros
 FONT_NAME = 'Arial'
 FONT_SIZE = 30
-MUSIC_PATH = 'audio_sound/loop.wav'
-CRASH_SOUND_PATH = 'audio_sound/crash.wav'
-CHUCKLE_SOUND_PATH = 'audio_sound/done.mp3'
-HIGH_SCORE_FILE = 'datafiles/save.dat'
+MUSIC_PATH = 'assets/audio_sound/loop.wav'
+CRASH_SOUND_PATH = 'assets/audio_sound/crash.wav'
+CHUCKLE_SOUND_PATH = 'assets/audio_sound/done.mp3'
+HIGH_SCORE_FILE = 'assets/datafiles/save.dat'
 
 # Caminhos das texturas
-LEFT_SIDE_IMAGE_PATH = 'assets/left_side.png'
-RIGHT_SIDE_IMAGE_PATH = 'assets/right_side.png'
-ASPHALT_IMAGE_PATH = 'assets/asphalt.png'
+LEFT_SIDE_IMAGE_PATH = 'assets/image/left_side.png'
+RIGHT_SIDE_IMAGE_PATH = 'assets/image/right_side.png'
+ASPHALT_IMAGE_PATH = 'assets/image/asphalt.png'
 
 # Configurações de vida
 INITIAL_LIVES = 3
